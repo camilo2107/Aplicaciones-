@@ -1,0 +1,23 @@
+
+<table class="table taable-striped table-hover tabl-borderede">
+    <tr>
+        <th>Fecha</th>
+        <th>Hora</th>
+        <th>Destinatario</th>
+        <th>Asunto</th>
+        <th>Mensaje</th>
+
+    </tr>
+
+    {% for usuario in datas %}
+    <tr>
+        <td>{{ usuario ['fecha'] }}</td>
+        <td>{{ usuario ['hora'] }}</td>
+        <td>{{ usuario ['fullname'] }}</td>
+        <td>{{ usuario ['asunto'] }}</td>
+        <td>{{ usuario ['mensaje'] }}</td>
+    </tr>
+       
+    {% endfor %}
+
+</table>
